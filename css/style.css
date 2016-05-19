@@ -1,64 +1,98 @@
-/* Custom Stylesheet */
-body, html {
-      margin: 0;
-      -webkit-font-smoothing: antialiased;
-      background:#fff;
-      text-align: center;
-      -webkit-transition: opacity 400ms;
-      -moz-transition: opacity 400ms;
-      transition: opacity 400ms;
-      background-color:black;
-}
-
-body .header{
-  color: #000;
-}
-html {
-min-height: 100%;
-    }
 body {
-  padding: 0;
-  position: relative;
+  background-color: #000000;
   margin: 0;
-  min-height: 100%;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.main  {
-    margin: 25px auto;
+#extra {
+  position: fixed;
+  width: 100%;
+  color: #ffffff;
+  padding: 5px;
+  font-family: Monospace;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+  bottom: 3px;
+}
+
+#extra a {
+  display: inline-block;
+  padding: 2px 5px;
+  margin: 2px 5px;
+}
+
+#controller {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  z-index: 2;
+}
+
+#controllertype {
+  background-color: #ccc;
+  color: #000;
+  border: 1px solid #999;
+}
+
+#calibrate-compass-popup .figure8 {
+  font-family: Verdana;
+  font-size: 120px;
+  margin: -50px 0 -30px 0;
+  padding:	0;
+  text-align: center;
+}
+
+/* Simple popup style */
+
+.popup {
+  position: absolute;
+  width: 340px;
+  height: 180px;
+  left: 50%;
+  top: 50%;
+  margin: -130px 0 0 -190px;
+  visibility: hidden;
+  /*opacity: 0;*/
+  z-index: 3;
+  padding: 20px;
+
+  background: white;
+  box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6 );
+  border-radius: 3px;
+}
+
+.popup button {
+  border: 0px;
+  padding: 8px 10px;
+  margin: 5px 0px;
+  border-radius: 1px;
+
+  cursor: pointer;
+  color: #fff;
+  background: #333;
+  font-size: 15px;
+}
+
+.container {
+    background: transparent;
+    display: inline-block;
+    float: none !important;
+    width: 100%;
+    position: absolute;
+    top: 27%;
+    z-index: 999;
+}
+
+.content {
+    background: rgba(255,0,0,0.4);
+    color: #fff;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
     max-width: 980px;
-}
-
-.main p {
-    color: #000;
-    text-align: left;
-    font-size: 18px;
-    line-height: 180%;
-    font-weight: 100;
-}
-
-.nav-top a {
-    color: #000;
-}
-
-.demo5 body {
-  width: 100%;
-  min-height: 100%;
-  position: absolute;
-}
-
-.demo5 .bg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-}
-
-.demo5 .nav-top, .demo5 .header, .demo5 .menu {
-  position: relative;
-}
-.demo5 .header {
-  color: white;
-}
-.demo5 .ibg-bg {
-  position: absolute;
+    padding: 20px;
+    width: 100%;
 }
